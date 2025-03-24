@@ -1,0 +1,119 @@
+*{
+    font-family: Arial;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    color: white;
+    padding: 0px 20px;
+}
+
+header{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3); /* Efek transparan */
+    border-bottom: 2px solid white;
+}
+
+.foto{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff; /* Putih untuk kontras */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+a{
+    color: #ff9800;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ffc107; /* Warna lebih terang untuk efek hover */
+    text-decoration: underline;
+}
+
+main{
+    display: flex;
+}
+
+section {
+    border: black;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bph-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap; /* Responsif: jika tidak cukup lebar, elemen turun ke bawah */
+    text-align: center;
+}
+
+.bph img {
+    border-radius: 10px;
+    width: 100%; /* Pastikan gambar menyesuaikan ukuran div */
+    max-width: 150px;
+}
+
+aside{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+aside h3{
+    font-size: 25px;
+}
+
+.kelas{
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+}
+
+.kelas img{
+    width: 100%;
+    height: auto; /* Menjaga aspek rasio */
+    border-radius: 10px;
+}
+
+table{
+    width: 80%;
+    border-collapse: collapse; /* collaps berguna untuk garis tabel agar menyatu */
+    background: white;
+    color: black;
+    border-radius: 8px;
+    overflow: hidden; /* overflow: hiden berguna menyembunyikan bagian tabel yang melebihi ukuran*/
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+th {
+    background: #2c3e50;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.credit{
+    text-align: center;
+    font-size: 12px;
+}

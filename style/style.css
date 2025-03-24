@@ -1,0 +1,81 @@
+*{
+    /* untuk mengatur font keseluruhan */
+    font-family: Arial;
+}
+
+input{
+    font-size: 100%;
+    color: darkslategray;
+    background-color: #efefef;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px; /* berguna untuk menentukan tingkat ketajaman pada sudut border */
+    padding: 5px 5px 5px 40px; /* padding berguna untuk menentukan jarak antara konten dengan border */
+    display: block; /* display:block berfungsi untuk membuat baris baru pada bagian tertentu (sama seoerti <p> diteks) */
+    margin-bottom: 10px; /* memberikan jarak antar form */
+
+    background-repeat: no-repeat; /* background-repeat:no-repeat berguna agar background yang digunakan tidak terduplikat */
+    background-size: 20px; /* ini untuk ukuran dari background yang digunakan pada input (icon) */
+    background-position: 8px; /* ini untuk posisi backgroundnya (icon) */
+}
+
+body{
+    /* justify-content dan align-item berguna agar bagian yang kita mau berada di tengah dan hanya berlaku jika display bertipe flex */
+    /* display:flex berfungsi jika tab browser diperbesar/perkecil maka konten yang dimuat akan menyesuaikan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+}
+
+h1.judul{
+    /* posisi judulnya */
+    text-align: center;
+}
+
+div.posisi{
+    border-radius: 20px;
+    justify-content: center;
+    margin: 50px auto;
+    padding: 20px;
+    background:#fff;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2); /* shadow (kanan, bawah, area blur), rgba(red, green, blue, transparansi) */
+}
+
+form.form{
+    justify-self: center; /* letak formnya */
+    padding: 10px;
+}
+
+input:focus{
+    background-color: #ffffff;
+}
+
+input#user{
+    background-image: url("../img/user.png");
+}
+
+input#password{
+    background-image: url("../img/password.png");
+}
+
+button#submit{
+    color: white;
+    background:#2c3e50;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px; 
+}
+
+/* berguna ketika cursor berada ditombol login */
+button#submit:hover{
+    color:#213555;
+    background-color: #f5efe7;
+    cursor: pointer; /* bentuk cursor ketika berada ditombol login */
+}
+
+/* berguna ketika tombol login di klik */
+button#submit:active{ 
+    color: #3e5879;
+    background-color: #d8c4b6;
+}
